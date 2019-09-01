@@ -21,3 +21,9 @@ With the wanted info after the command in the node.js command line.
 1. Navigate to the file inside termial/cmd 
 2. type "node lire.js 'command' 'band name...etc.'" 
 3. Watch the info pop in the bash. 
+
+# Used Tech
+* Spotify Node API
+* Axios
+* OMDB API 
+* Bands in Town API
