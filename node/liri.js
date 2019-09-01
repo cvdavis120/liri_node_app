@@ -18,10 +18,13 @@ function songSearch(i) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-
-        // console.log(JSON.stringify(data.tracks.items[0].album.artists[0].name, null, 2));
-        console.log(data.tracks.items[0].album.artists[0].name)
-        rArtist = data.tracks.items[0].album.artists[0].name
+        var myData = data.tracks.items[0]
+        console.log("Song Name: " + myData.name);
+        console.log("Artist Name: " + myData.album.artists[0].name)
+        // console.log(myData);
+        console.log("Album Name: " + myData.album.name);
+        console.log("Check out the song here! -> " + myData.external_urls.spotify);
 
     });
 }
+songSearch("Black Widow")
